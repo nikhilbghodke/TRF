@@ -7,12 +7,7 @@
 			$con= mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 			
 			
-			if($con){
-				echo "You are connected to the database";
-			}
-			else
-			{
+			if(!$con)
 				die("Connection to Database failed !!! ");
-			}
 	
 ?>
