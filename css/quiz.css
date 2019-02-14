@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#form1 fieldset, #form2 fieldset, #form3 fieldset, #form4 fieldset, #form5 fieldset, #form6 fieldset, #form7 fieldset, #form8 fieldset, #form9 fieldset, #form10 fieldset {
+	margin-top:15px;
+	margin-bottom:10px;
+	}
+	
+	
+#form1 div, #form2 div, #form3 div, #form4 div, #form5 div, #form6 div, #form7 div, #form8 div, #form9 div, #form10 div {
+	margin:15px 10px;
+	font-size:14px;
+	line-height:1.85em;
+	}
+#score {
+	font-size:48px;
+	font-weight:bold;
+	color:#CC0000;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+.correct-answer, .incorrect-answer {
+	font-weight:bold;
+	font-size:16px;
+	}
+.correct-answer {
+	color:#090;
+	}
+.incorrect-answer {
+	color:#CC0000;
+	}
+#correct-perfect {
+	font-size:36px;
+	font-weight:bold;
+	color:#090;
+	text-align:center;
+	margin:0;
+	padding-top:49px;
+
+	}

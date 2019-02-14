@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+.clear {
+	clear:both;
+}
+#container {
+	background:#FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	width:900px;
+	border-bottom:#6699cc 4px solid;
+	border-left:#6699cc 4px solid;
+	border-right:#6699cc 4px solid;
+	}
+#header {
+	margin-bottom:15px;
+	text-align:center
+	}
+#content {
+	width:90%;
+	border-top:#6699cc 4px solid;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	}
+#content-left, #welcome {
+	width:%80;
+	
+	margin-top:0;
+	margin-bottom:16px;
+	padding-top:10px;
+	}
+#content-right, #home-right {
+	width:249px;
+	float:right;
+	padding:0;
+	margin:0;
+	}
+#content-right p {
+	margin-right:10px;
+	}
+#content-example {
+	width:650px;
+	margin-top:0;
+	margin-bottom:16px;
+	padding-top:10px;
+	}
+#start-btn {
+	margin-left:32px;
+	margin-top:295px;
+	vertical-align:bottom;
+}
+#nxt-btn, #take-quiz-btn, #mod7-ex-btn {
+	float:right;
+}
+#mod7-ex-btn {
+    margin-right:8px;
+}
+#prv-btn {
+	float:left;
+}
+#answers {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:100%;
+	}
+#ftr {
+	margin:0;
+	padding-left:10px;
+	}

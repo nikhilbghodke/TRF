@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+#accordion {
+	float:left;
+	margin-left:-4px;
+	margin-bottom:20px;
+	margin-top:0;
+	padding:0;
+	background:#999999;
+	list-style-type:none;
+	width:170px;
+	border-bottom:#6699cc 4px solid;
+	border-top:#6699cc 4px solid;
+	border-right:#6699cc 4px solid;
+}
+#accordion li{
+	cursor: pointer;
+	margin:0;
+	padding:0;
+	padding-left:10px;
+	border-bottom:thin dotted #CCCCCC;
+}
+#accordion ul {
+	list-style: none;
+	padding:0;
+	display: none;
+	border:none;
+}
+#accordion li, #accordion a:link, #accordion a:visited {
+	display:block;
+	color:#fff;
+	line-height:2;
+	font-size:13px;
+	font-weight:normal;
+}
+#accordion a:link, #accordion a:visited {
+	padding-left:16px;
+	border-bottom:#666 thin solid;
+	text-decoration:none;
+}
+#accordion a:hover {
+	background:url(../images/nav-hover.png) repeat-y right top;
+}
+#accordion #nav-home, #accordion #nav-credit, #accordion #nav-modules, #accordion #nav-quizzes {
+	padding:0;
+	border:none;
+	font-weight:bold;
+	font-size:14px;
+}
