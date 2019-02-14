@@ -14,10 +14,10 @@ if(!isset($_SESSION['grNo']))
 print_r($_SESSION['grNo']);
 $date = date('Y-m-d H:i:s');
 //print_r($date);
-$testNo=1;
+$testNo=2;
 $elex_start_time = '2019-02-15 10:00:00';
 $elex_end_time = '2019-02-15 22:00:07';
-$pro_start_time = '2019-02-16 20:00:00';
+$pro_start_time = '2019-02-11 20:00:00';
 $pro_end_time = '2019-02-16 22:00:00';
 $mech_start_time = '2019-02-18 20:00:00';
 $mech_end_time = '2019-02-18 22:00:00';
