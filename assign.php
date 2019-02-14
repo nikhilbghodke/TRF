@@ -15,7 +15,7 @@ print_r($_SESSION['grNo']);
 $date = date('Y-m-d H:i:s');
 //print_r($date);
 $testNo=1;
-$elex_start_time = '2019-02-11 10:00:00';
+$elex_start_time = '2019-02-15 10:00:00';
 $elex_end_time = '2019-02-15 22:00:07';
 $pro_start_time = '2019-02-16 20:00:00';
 $pro_end_time = '2019-02-16 22:00:00';
@@ -43,7 +43,7 @@ if(((strtotime($mech_start_time))<strtotime($date))and ((strtotime($mech_end_tim
 }
 if(!isset($_SESSION['domain']))
 {
-	$schedule= "<h1>Elex paper will start on ".$elex_start_time."<br>   programming paper will start on ".$pro_start_time."<br>  Mechanical Paper will start on ".$mech_start_time." </h1>";
-	echo $schedule;
+	header("location:schedule.php");
+	session_destroy();
 }
 ?>
