@@ -25,7 +25,7 @@ include "connection.php";
 	$store_sql.=$marks." WHERE gr=".$_SESSION['grNo'];
 	$answer = mysqli_query($con,$store_sql);
 	session_destroy();
-	echo "<script>alert('Your  score is ".$marks.""."');</script>";
+	//echo "<script>alert('Your  score is ".$marks.""."');</script>";
 
 ?>
 <!doctype html>

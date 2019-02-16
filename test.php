@@ -2,6 +2,7 @@
 include "assign.php";
 
 ?>
+
 <!doctype html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -13,7 +14,7 @@ include "assign.php";
 <link href="css/quiz.css" rel="stylesheet" type="text/css" media="screen">
 
 </head>
-<body>
+<body onload="MyFunction">
     <div id="container">
     	
        
@@ -27,7 +28,7 @@ include "assign.php";
             <h1>Level 2 Test</h1>
         	<div id="content-left" >
                 <h2>Ready for the Test?</h2>
-               	<form id="form6" method="post" action="submit.php">
+               	<form id="form6" method="post" action="submit.php" name="test_form" id="test_form">
                 <fieldset >
 					<?php 
 				if(isset($_SESSION['domain']) and isset($_SESSION['testNo']))
@@ -63,7 +64,7 @@ include "assign.php";
 				?>
                 
                 </fieldset>
-                <input type="submit" value="Submit Quiz" name="submit" class="btn btn-success">
+                <input type="submit" value="Submit Quiz" name="submit" class="btn btn-success" id="submit">
                 </form>
    	</div> <!-- content-left END -->
 
@@ -81,7 +82,13 @@ include "assign.php";
 	
 </body>
 
+<script>
 
+setTimeout(function myFunction(){
+alert("Time out your test is Submitted");
+document.getElementById("submit").click();
+},20000);
+</script>
 
 
 

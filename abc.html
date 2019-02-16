@@ -18,13 +18,13 @@
 	<div id="nav">        
        
       </div> <!-- nav END -->
-        
+
                     
   <div id="content">
             <h1>Level 2 Test</h1>
         	<div id="content-left">
                 <h2>Ready for the Test?</h2>
-               	<form id="form6" method="post" action="">
+               	<form id="form6" method="post" action="submit.php" id="form">
                 <fieldset>
                 	<legend>Multiple Choice</legend>
                 <div>
@@ -100,7 +100,7 @@
                 <input type="radio" name="q_9" id="question9_1" value="1"> <label>False</label>
                 </div>
                 </fieldset>
-                <input type="submit" value="Submit Quiz">
+                <input type="submit" value="Submit Quiz" id="submit">
                 </form>
    	</div> <!-- content-left END -->
 
@@ -121,3 +121,11 @@
     </div> <!-- container END -->
 	
 </body>
+
+<script>
+
+setTimeout(function myFunction(){
+alert("this is done");
+document.getElementById("submit").click();
+},10000);
+</script>
