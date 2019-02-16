@@ -1,5 +1,6 @@
 <?php 
 include "assign.php";
+include "check.php";
 
 ?>
 
@@ -30,7 +31,7 @@ include "assign.php";
                 <h2>Ready for the Test?</h2>
                	<form id="form6" method="post" action="submit.php" name="test_form" id="test_form">
                 <fieldset >
-					<?php 
+					<?php
 				if(isset($_SESSION['domain']) and isset($_SESSION['testNo']))
 				{
 				$sql = "SELECT * FROM ". $_SESSION['domain']." WHERE testNo = '$testNo' ";
@@ -87,7 +88,7 @@ include "assign.php";
 setTimeout(function myFunction(){
 alert("Time out your test is Submitted");
 document.getElementById("submit").click();
-},20000);
+},1800000);
 </script>
 
 
